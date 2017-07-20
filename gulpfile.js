@@ -11,12 +11,15 @@ var uglify              = require('gulp-uglify');
 var notify              = require("gulp-notify");
 var webpack             = require("gulp-webpack");
 var webpackConfig       = require("./webpack.config.js");
+const image = require('gulp-image');
 
 // Paths
 var paths = {
-    scripts: ['src/js/*.js'],
-    sass: ['src/css/*.sass'],
-    haml: ['src/*.haml']
+    scripts: ['src/js/**/*.js'],
+    sass:    ['src/css/**/*.sass'],
+    scss:    ['src/css/**/*.scss'],
+    haml:    ['src/**/*.haml'],
+    images:  ['src/images/**/*']
 };
 
 // HTML
@@ -40,13 +43,27 @@ gulp.task('sass', function () {
         .pipe(sass({ indentedSyntax: true }).on('error', sass.logError))
         .pipe(gulp.dest('build/css'));
 });
+// Scss
+gulp.task('scss', function () {
+    gulp.src(paths.scss)
+        .pipe(sass({ indentedSyntax: true }).on('error', sass.logError))
+        .pipe(gulp.dest('build/css'));
+});
+
+// Images
+gulp.task('image', function () {
+  gulp.src(paths.images)
+    .pipe(image())
+    .pipe(gulp.dest('build/images'));
+});
 
 // Watch task
 gulp.task('watch', function() {
     gulp.watch(paths.scripts, ['javascript']);
     gulp.watch(paths.haml, ['haml']);
     gulp.watch(paths.sass, ['sass']);
+    gulp.watch(paths.scss, ['scss']);
 });
 
 // Default task
-gulp.task('default', ['watch', 'javascript', 'haml', 'sass']);
+gulp.task('default', ['watch', 'javascript', 'haml', 'sass', 'scss', 'image']);

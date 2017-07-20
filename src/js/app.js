@@ -1,7 +1,4 @@
-// Dependencies
-var Game = require('./game');
+require('./foundation.min')
+var $ = require('./vendor/jquery')
 
-// Load game
-$(document).ready(function(){
-  var game = new Game($('canvas'));
-});
+$(document).foundation();

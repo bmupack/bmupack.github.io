@@ -49,3 +49,15 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit; }
+
+.hero-section {
+  background: url("/images/building.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hero-section .hero-section-text {
+    color: #FFF;
+    text-shadow: 1px 1px 2px #000; }

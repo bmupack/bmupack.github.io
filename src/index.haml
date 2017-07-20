@@ -3,6 +3,104 @@
     %title
       Богатый Мир Упаковки
     %link{rel: 'stylesheet', type: 'text/css', href: 'css/style.css'}
+    %link{rel: 'stylesheet', href: 'css/foundation.css'}
     %script{src: 'js/app.js'}
+
   %body
-    %h1 Богатый Мир Упаковки
+
+    %nav.top-bar{"data-topbar" => "", :role => "navigation"}
+      %ul.title-area
+        %li.name
+          %h1
+            %a{:href => "/"} Богатый Мир Упаковки
+        / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+        %li.toggle-topbar.menu-icon
+          %a{:href => "#"}
+            %span Menu
+      %section.top-bar-section
+        / Right Nav Section
+        %ul.right
+          %li.active
+            %a{:href => "tel:88162332131"} +7 8162 33-21-31
+          %li.has-dropdown
+            %a{:href => "#"} dropdown
+            %ul.dropdown
+              %li
+                %a{:href => "#"} First link in dropdown
+              %li.active
+                %a{:href => "#"} Active link in dropdown
+
+    .hero-section
+      .hero-section-text
+        %h1 Header
+        %h5 subtitle about anything you like
+    .row
+      %h2 О компании
+      %p Более 20 лет Компания Богатый Мир Упаковки обеспечивает города Северо-Западного федерального округа упаковочными материалами, хозяйственно-бытовой и канцелярской продукцией. Свежим, и успешным направлением, стала сувенирная, праздничная, интерьерная и декоративная продукция.
+
+
+
+
+
+    .row
+      .large-12.show-for-small.columns
+        %h3 Header
+        %hr/
+      .large-3.small-6.columns.benefits
+        .panel
+          %h4 Выгодно!
+          %hr/
+          %h5.subheader Система скидок
+      .large-3.small-6.columns.benefits
+        -# = image_tag("delivery.png", :class => "benefits")
+        .panel
+          %h4 Бесплатно!
+          %hr/
+          %h5.subheader Бесплатная доставка при заказе от 2'000 рублей
+      .large-3.small-6.columns.benefits
+        -# = image_tag("cart.png", :class => "benefits")
+        .panel
+          %h4 Товары
+          %hr/
+          %h5.subheader На любой вкус и цвет
+      .large-3.small-6.columns.benefits
+        -# = image_tag("industrial.png", :class => "benefits")
+        .panel
+          %h4 Производство
+          %hr/
+          %h5.subheader от 2 000 рублей
+    .row
+      .large-2.columns.invisible.show-for-large
+        .panel
+          -# = link_to image_tag("about.png", :class => "icon"), about_path
+          .center
+            %h3 Коротко
+            %hr.hr-negative-margin/
+            %h5.subheader о компании
+      .large-10.columns
+        .panel
+          %h3.hide-for-large Богатый Мир Упаковки
+          %hr.hide-for-large/
+          %p
+            %strong Богатый Мир Упаковки
+            — одна из крупнейших торгово-производственных компаний на северо-западе России. Уже более 20 лет поставляет
+            %strong упаковочные
+            материалы, а так же
+            -# = succeed "," do
+            %strong канцелярские
+            -# = succeed "," do
+            %strong хозяйственные
+            %strong бытовые
+            товары. У нас Вы найдете множество
+            %strong подарков
+            и
+            %strong сувениров
+            .
+            Множество компаний по достоинству оценили продукцию компании Богатый Мир Упаковки, присоединяйтесь и Вы!
+    -# .row
+    -#   .large-12.columns
+    -#     %blockquote
+    -#       Все на свете из пластмассы
+    -#       %br/
+    -#       И вокруг пластмассовая жизнь
+    -#       %cite гр. Сплин
