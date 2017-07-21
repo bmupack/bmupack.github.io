@@ -6,6 +6,7 @@
 var gulp                = require('gulp');
 var gutil               = require("gulp-util");
 var haml                = require('gulp-haml-coffee');
+var hamlt               = require("gulp-haml-templates");
 var sass                = require('gulp-sass');
 var uglify              = require('gulp-uglify');
 var notify              = require("gulp-notify");
@@ -47,7 +48,7 @@ gulp.task('sass', function () {
 gulp.task('scss', function () {
     gulp.src(paths.scss)
         .pipe(sass({ indentedSyntax: true }).on('error', sass.logError))
-        .pipe(gulp.dest('build/css'));
+        .pipe(gulp.dest('build/css/'));
 });
 
 // Images

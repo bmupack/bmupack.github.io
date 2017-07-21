@@ -1,4 +1,4 @@
-require('./foundation.min')
-var $ = require('./vendor/jquery')
+require('./vendor/foundation.min')
+var $ = require('./vendor/vendor/jquery')
 
 $(document).foundation();
