@@ -1,5 +1,6 @@
 @import 'reset'
 @import 'vendor/foundation.min'
+@import 'vendor/foundation/_settings'
 
 
 html
@@ -11,10 +12,15 @@ html
 $hero-height: 400px
 $gutter: 1rem
 
+
+section.top-bar-section ul li
+  background: $invisible
+
 .brand
   img.brand-img
     padding: 0.5*$gutter 0 0.5*$gutter $gutter
     box-sizing:content-box
+    height: 6rem
 
   h1.brand-name
     display: inline
@@ -26,7 +32,7 @@ $gutter: 1rem
   .hero
     margin-top: $gutter
     .hero-img
-      background: url('/images/building1.jpg') 50% no-repeat
+      background: url('/images/building3.jpg') 100% no-repeat
       background-size: cover
       height: $hero-height
       text-align: center
@@ -44,9 +50,9 @@ $gutter: 1rem
           display: block
           // max-width: 500px
           // min-width: 100%
-          background-color: rgba($white, 0.5)
+          background-color: rgba($white, 0.25)
           text-align: left
-          padding: 3*$gutter  $gutter $gutter 2*$gutter
+          padding: 5*$gutter  $gutter $gutter 2*$gutter
           // margin: $gutter $gutter
           h1
             font-weight: bold
@@ -56,3 +62,86 @@ $gutter: 1rem
           p.white
             color: $white
             line-height: 0px
+          ul.hero-list
+            line-height: 2rem
+            margin-left: 0
+            color: $white
+          // ul.contacts li
+          //   background-color: $accent-color
+
+
+
+$light-gray: $invisible
+$medium-gray: $tuatara
+$product-feature-section-large-width: 75%
+$product-feature-section-bg: $light-gray
+$product-feature-section-divider-color: $medium-gray
+
+.product-feature-section
+  background: $product-feature-section-bg
+  padding: 1rem
+
+
+.product-feature-section-outer
+  display: flex
+  max-width: 100%
+  margin: 0 auto
+  flex-direction: column
+
+  // @include breakpoint(medium)
+  //   max-width: $product-feature-section-large-width
+
+
+
+.product-feature-section-headline
+  margin-bottom: 2rem
+  text-align: center
+
+
+.product-feature-section-inner
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+
+.product-feature-section-feature
+  display: flex
+  align-items: flex-start
+  padding: 1rem
+  flex: 1 0 50%
+  justify-content: flex-start
+  flex-direction: column
+
+  &.top-left
+    border-right: 1px solid $product-feature-section-divider-color
+    border-bottom: 1px solid $product-feature-section-divider-color
+
+
+  &.top-right
+    border-bottom: 1px solid $product-feature-section-divider-color
+
+
+  &.bottom-left
+    border-right: 1px solid $product-feature-section-divider-color
+
+
+  .feature-title
+    margin-bottom: 0
+    line-height: 16px
+    font-size: 0.875rem
+
+
+  .feature-desc
+    margin-bottom: 0
+
+
+  .fa
+    margin-right: 1.25rem
+    font-size: 2rem
+  //
+  //
+  // @include breakpoint(medium)
+  //   padding: 2rem
+  //   flex: 1 0 50%
+  //   justify-content: flex-start
+  //   flex-direction: row

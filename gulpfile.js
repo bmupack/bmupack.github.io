@@ -19,6 +19,7 @@ var paths = {
     scripts: ['src/js/**/*.js'],
     sass:    ['src/css/**/*.sass'],
     scss:    ['src/css/**/*.scss'],
+    style:   ['src/css/**/*'],
     haml:    ['src/**/*.haml'],
     images:  ['src/images/**/*']
 };
@@ -64,6 +65,8 @@ gulp.task('watch', function() {
     gulp.watch(paths.haml, ['haml']);
     gulp.watch(paths.sass, ['sass']);
     gulp.watch(paths.scss, ['scss']);
+    gulp.watch(paths.style, ['scss']);
+
 });
 
 // Default task
