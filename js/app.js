@@ -49,7 +49,7 @@
 	__webpack_require__(1);
 	var $ = __webpack_require__(3);
 
-	$(document).foundation();
+	// $(document).foundation();
 
 /***/ }),
 /* 1 */
