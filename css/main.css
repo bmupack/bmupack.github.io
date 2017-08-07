@@ -6444,6 +6444,12 @@ html {
 .nopaddings {
   padding: 0 !important; }
 
+.row-block {
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: 100%; }
+
 .dark-background {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -6511,6 +6517,11 @@ a.navbar-phone {
   font-weight: bold !important;
   font-size: 1rem !important; }
 
+a.navbar-email {
+  color: #0093db !important;
+  font-weight: bold !important;
+  font-size: 0.8rem !important; }
+
 .navbar-text-addr {
   margin-right: 1rem; }
 
@@ -6526,41 +6537,62 @@ section.top-bar-section ul li {
   margin-left: 0.5rem;
   font-size: 1.4rem; }
 
+.hero-img {
+  background: url("/images/building.jpg") 100% no-repeat;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#hero-img {
+  margin-top: 1rem; }
+
+.hero-img-alpha {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.25); }
+
 .row-large {
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
   .row-large .hero {
     margin-top: 1rem; }
-    .row-large .hero .hero-img {
-      background: url("/images/building.jpg") 100% no-repeat;
-      background-size: cover;
-      height: 400px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .row-large .hero .hero-img .hero-text-wr {
+    .row-large .hero .hero-text-wr {
+      width: 100%;
+      height: 100%; }
+      .row-large .hero .hero-text-wr .hero-text {
         width: 100%;
-        height: 100%; }
-        .row-large .hero .hero-img .hero-text-wr .hero-text {
-          width: 100%;
-          height: 100%;
-          display: block;
-          background-color: rgba(255, 255, 255, 0.25);
-          text-align: left;
-          padding: 5rem 1rem 1rem 2rem; }
-          .row-large .hero .hero-img .hero-text-wr .hero-text h1 {
-            font-weight: bold;
-            font-size: 2rem;
-            text-shadow: rgba(255, 255, 255, 0.5) 1px 1px, rgba(255, 255, 255, 0.5) -1px -1px, rgba(255, 255, 255, 0.5) 1px -1px, rgba(255, 255, 255, 0.5) -1px 1px; }
-          .row-large .hero .hero-img .hero-text-wr .hero-text h1, .row-large .hero .hero-img .hero-text-wr .hero-text p {
-            color: #333333; }
-          .row-large .hero .hero-img .hero-text-wr .hero-text p.white {
-            color: #FFFFFF;
-            line-height: 0px; }
-          .row-large .hero .hero-img .hero-text-wr .hero-text ul.hero-list {
-            line-height: 2rem;
-            margin-left: 0;
-            color: #FFFFFF; }
+        height: 100%;
+        display: block;
+        text-align: left;
+        display: -webkit-flex;
+        display: flex;
+        align-content: center;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        justify-content: center; }
+        .row-large .hero .hero-text-wr .hero-text h1 {
+          margin-bottom: 2rem;
+          font-weight: bold;
+          font-size: 2rem;
+          text-shadow: rgba(255, 255, 255, 0.5) 1px 1px, rgba(255, 255, 255, 0.5) -1px -1px, rgba(255, 255, 255, 0.5) 1px -1px, rgba(255, 255, 255, 0.5) -1px 1px; }
+        .row-large .hero .hero-text-wr .hero-text h1, .row-large .hero .hero-text-wr .hero-text p {
+          color: #333333; }
+        .row-large .hero .hero-text-wr .hero-text p.white {
+          color: #FFFFFF;
+          line-height: 0px; }
+        .row-large .hero .hero-text-wr .hero-text ul.hero-list {
+          text-align: center;
+          line-height: 2rem;
+          margin-left: 0;
+          color: #FFFFFF; }
+          .row-large .hero .hero-text-wr .hero-text ul.hero-list li {
+            display: inline-block;
+            margin: 0.5rem 1rem;
+            padding: 0rem 0.5rem;
+            background-color: rgba(51, 51, 51, 0.7);
+            border-bottom: 1px solid #cc2233; }
 
 .product-feature-section {
   background: transparent;
