@@ -6537,6 +6537,32 @@ section.top-bar-section ul li {
   margin-left: 0.5rem;
   font-size: 1.4rem; }
 
+.hero-img-manufacture {
+  background: url("/images/manufacture.png") 100% no-repeat;
+  color: #333333;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hero-img-manufacture h1#manufacture {
+    margin-bottom: 1rem; }
+  .hero-img-manufacture h3#manufacture {
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem; }
+  .hero-img-manufacture #ecology {
+    color: #43AC6A; }
+  .hero-img-manufacture ul.contacts {
+    margin-left: 0; }
+  .hero-img-manufacture ul.list-manufacture i {
+    color: #43AC6A; }
+  .hero-img-manufacture ul.list-manufacture i#reverse-top-down {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6); }
+
 .hero-img {
   background: url("/images/building.jpg") 100% no-repeat;
   background-size: cover;
