@@ -6441,6 +6441,10 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+h1.header-on-dark, h2.header-on-dark, h3.header-on-dark,
+h4.header-on-dark, h5.header-on-dark, h6.header-on-dark {
+  color: #FFFFFF; }
+
 .nopaddings {
   padding: 0 !important; }
 
@@ -6498,13 +6502,14 @@ html {
 
 .offer-card h3.offer {
   font-size: 1rem;
-  color: #cc2233; }
+  color: #F9C900; }
 
 .offer-card .yellow-offer {
   color: #F9C900; }
 
-.offer-card .offer-text {
-  color: #FFFFFF; }
+.offer-card ul.offer-text {
+  color: #FFFFFF;
+  margin-left: 0; }
 
 hr.contacts-block {
   height: 2px;
