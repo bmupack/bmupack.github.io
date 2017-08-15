@@ -6858,8 +6858,7 @@ section.top-bar-section ul li {
             display: inline-block;
             margin: 0.5rem 1rem;
             padding: 0rem 0.5rem;
-            background-color: rgba(51, 51, 51, 0.7);
-            border-bottom: 1px solid #cc2233; }
+            background-color: rgba(51, 51, 51, 0.7); }
 
 .hero-manufacture p.description#charcoal {
   color: #555555;
