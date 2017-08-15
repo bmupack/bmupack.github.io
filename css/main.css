@@ -6436,7 +6436,8 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100%; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -6445,14 +6446,53 @@ h1.header-on-dark, h2.header-on-dark, h3.header-on-dark,
 h4.header-on-dark, h5.header-on-dark, h6.header-on-dark {
   color: #FFFFFF; }
 
+.catalog-hero {
+  height: 40rem; }
+
+.catalog-hero-image-wr {
+  width: 100vw;
+  height: 100vh; }
+  .catalog-hero-image-wr .catalog-hero-image {
+    position: absolute;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    background: url("/images/russiaLow.svg");
+    background-size: 10%;
+    background-repeat: no-repeat; }
+
 .nopaddings {
   padding: 0 !important; }
+
+.nomargins {
+  margin: 0 !important; }
 
 .row-block {
   margin: 0 auto;
   padding-top: 4rem;
   padding-bottom: 4rem;
   max-width: 100%; }
+
+.manufacture-header {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+p.manufacture-desc {
+  margin-bottom: 0.5rem; }
+
+p.manufacture-desc:last-child {
+  margin-bottom: 0; }
+
+ul.manufacture-advantage li {
+  padding-bottom: 3rem; }
+  ul.manufacture-advantage li i {
+    padding-top: 0.25rem;
+    font-size: 2rem;
+    color: #F9C900; }
+  ul.manufacture-advantage li h4 {
+    color: #333333; }
 
 .dark-background {
   padding-top: 4rem;
