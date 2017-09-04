@@ -1,1 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");.row.delivery-block h2{font-size:1.3rem}.row.delivery-block .delivery-about{position:relative;min-height:100%}.row.delivery-block .delivery-about .delivery-free{margin-bottom:1rem}.row.delivery-block .delivery-about .delivery-free .delivery-title-point{font-size:1.15rem;font-weight:700}.delivery-bg-image-wr{position:absolute;left:0;min-height:100vh;min-width:100%}.delivery-bg-image-wr .delivery-bg-image{position:absolute;background-image:url(/images/russiaLow.svg);background-size:120%;background-repeat:no-repeat;margin:0 auto;top:0;height:100%;width:100%}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.row.delivery-block h2 {
+  font-size: 1.3rem; }
+.row.delivery-block .delivery-about {
+  position: relative;
+  min-height: 100%; }
+  .row.delivery-block .delivery-about .delivery-free {
+    margin-bottom: 1rem; }
+    .row.delivery-block .delivery-about .delivery-free .delivery-title-point {
+      font-size: 1.15rem;
+      font-weight: bold; }
+
+.delivery-bg-image-wr {
+  position: absolute;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100%; }
+  .delivery-bg-image-wr .delivery-bg-image {
+    position: absolute;
+    background-image: url(/images/russiaLow.svg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    top: 0;
+    height: 100%;
+    width: 100%; }
